@@ -51,3 +51,26 @@ Este repositório foi criado para organizar e documentar meus estudos sobre Type
    - Union e Intersection Types.
    - Utility Types.
    - Manipulação de tipos com Mapped Types e Conditional Types.
+
+
+## Como Utilizar
+
+1. Clone este repositório:
+
+   ```bash
+   git clone [https://github.com/seu-usuario/nome-repositorio.git](https://github.com/WictorBertulino/typescript-concepts-study.git)
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Explore os exemplos dentro das pastas organizadas por tema.
+
+ ```bash
+   npm run start
+   ```
+
+
