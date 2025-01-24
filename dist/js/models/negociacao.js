@@ -1,19 +1,17 @@
 export class Negociacao {
-    constructor(data, quantidade, valor) {
-        this._data = data;
-        this._quantidade = quantidade;
-        this._valor = valor;
-    }
-    get data() {
-        return this._data;
-    }
-    get quantidade() {
-        return this._quantidade;
-    }
-    get valor() {
-        return this._valor;
+    constructor(_data, quantidade, valor) {
+        this._data = _data;
+        this.quantidade = quantidade;
+        this.valor = valor;
     }
     get volume() {
-        return this._valor * this._quantidade;
+        return this.valor * this.quantidade;
+    }
+    // programação defensiva - O conceito diz aonde não 
+    // devo autorizar meu atributo do construtor em ser alterado.
+    // dessa forma crio uma cópia do meu atributo da classe e busco o valor dele retornando a cópia.
+    get data() {
+        const data = new Date(this._data.getTime());
+        return data;
     }
 }
